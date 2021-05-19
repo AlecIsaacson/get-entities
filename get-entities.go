@@ -38,7 +38,7 @@ type nrEntityStruct struct {
 
 func main() {
   nrAPI := flag.String("apikey", "", "New Relic admin user API Key")
-  nrQuery := flag.String("query","name like '%'","A valid NRQL query")
+  nrQuery := flag.String("nrql","name like '%'","A valid NRQL query")
 	logVerbose := flag.Bool("verbose", false, "Writes verbose logs for debugging")
 	flag.Parse()
 
