@@ -9,7 +9,7 @@ This app takes two mandatory and one optional command line switches:
  `-apikey : A New Relic API key that can query the GraphQL API.  `  
  `-query : A valid query string  `  
  `-verbose : An optional flag that enables verbose logging for debugging.`
- 
+
 [See the New Relic Entity GraphQL tutorial for details on query format.](https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial)
 
 As an example:
@@ -18,4 +18,7 @@ This will dump all entities that I have permissions to see:
 `./get-entities -apikey *myAPIKey*`  
 
 This will dump only application entities:  
- `./get-entities -apikey *myAPIKey* -query "type = 'APPLICATION'"`  
+`./get-entities -apikey *myAPIKey* -query "type = 'APPLICATION'"`  
+
+This will dump all entities with a certain tag:
+`./get-entities -apikey *myAPIKey* -query "tags.deviceType = 'WINDOWS'"`  
