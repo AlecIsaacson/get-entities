@@ -1,3 +1,6 @@
+//This app will remove the speified tag from a list of New Relic entities.
+//It expects a file that contains a list of entity names and GUIDs to act on.
+//A good source for that file is the get-entities app in this repo.
 package main
 
 import (
